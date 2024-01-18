@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Challenge : IrisCTF 2024 - CTF fun for hackers of all skill levels
+  </title>
+  <meta content="A fun, lighthearted, and educational 48-hour online CTF aimed towards hackers of all levels." name="description"/>
+  <meta content="" name="author"/>
+  <meta content="/static/img/favicon.png" property="og:image">
+   <link href="/static/img/favicon.png" rel="icon" type="image/png"/>
+   <link href="/static/ctfx.css-v-1.3.0.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <div id="navbar">
+   <a href="/">
+    <img id="navbar-logo" src="/static/img/logo_navbar.png"/>
+   </a>
+   <div id="navbar-buttons">
+    <a href="/home.html">
+     Home
+    </a>
+    <a href="/challenges.html">
+     Challenges
+    </a>
+    <a href="/scoreboard.html">
+     Scoreboard
+    </a>
+    <a href="/profile.html">
+    </a>
+    <form action="/api" method="post">
+    </form>
+   </div>
+  </div>
+  <div id="body-content">
+   <div class="pre-category-name">
+    Challenge:
+   </div>
+   <div class="category-name" style="font-size:48px">
+    A Harsh Reality of Passwords
+   </div>
+   <div style="display:flex; margin-top:8px">
+    <div class="tag tag-inline" style="margin-right:8px">
+     <img src="/static/img/icons/flag.png" style="width:20px; height:20px; margin-right:8px">
+      <b>
+       465 Points
+      </b>
+     </img>
+    </div>
+    <div class="tag tag-inline" style="margin-right:8px">
+     <img src="/static/img/icons/check.png" style="width:20px; height:20px; margin-right:8px"/>
+     <b>
+      28 Solves (1.6% of users)
+     </b>
+    </div>
+   </div>
+   <div class="section-header">
+    <div class="decorator-square-container" style="transform: rotate(0deg)">
+     <div class="decorator-square-component" style="background-color:#009927">
+     </div>
+     <div class="decorator-square-component title-decorator-gray">
+     </div>
+     <div class="decorator-square-component decorator-square-icon" style="background-image: url('/static/img/icons/arrow.png');background-size: 16px;">
+     </div>
+    </div>
+    Solvers
+   </div>
+   <table>
+    <thead>
+     <tr>
+      <th style="flex-basis: 10%;">
+       Position
+      </th>
+      <th style="flex-basis: 55%;">
+       Team
+      </th>
+      <th style="flex-basis: 35%;">
+       Solved
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td style="flex-basis: 10%;">
+       1
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-616.html">
+        L3ak
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="41402">
+         11 Hours, 30 Minutes after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         06/01/2024 - 11:30:02 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       2
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-831.html">
+        Team Space
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="57304">
+         15 Hours, 55 Minutes after release (3 tries)
+        </span>
+        <div class="tooltip-text">
+         06/01/2024 - 15:55:04 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       3
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-801.html">
+        Black Bauhinia
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="64693">
+         17 Hours, 58 Minutes after release (2 tries)
+        </span>
+        <div class="tooltip-text">
+         06/01/2024 - 17:58:13 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       4
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-614.html">
+        bi0s
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="73160">
+         20 Hours, 19 Minutes after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         06/01/2024 - 20:19:20 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       5
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-656.html">
+        CyberSpace
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="73767">
+         20 Hours, 29 Minutes after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         06/01/2024 - 20:29:27 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       6
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-683.html">
+        ByteSmashers
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="79213">
+         22 Hours, 0 Minutes after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         06/01/2024 - 22:00:13 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       7
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-198.html">
+        OrangeBox
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="81131">
+         22 Hours, 32 Minutes after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         06/01/2024 - 22:32:11 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       8
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-319.html">
+        Social Engineering Experts
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="83602">
+         23 Hours, 13 Minutes after release (175 tries)
+        </span>
+        <div class="tooltip-text">
+         06/01/2024 - 23:13:22 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       9
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-1282.html">
+        BobbedBob
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="94440">
+         1 Day, 2 Hours after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 02:14:00 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       10
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-662.html">
+        S.h.i.c.h.i.b.u.k.a.i
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="94564">
+         1 Day, 2 Hours after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 02:16:04 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       11
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-4.html">
+        StandinOnBizniz
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="100543">
+         1 Day, 3 Hours after release (174 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 03:55:43 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       12
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-194.html">
+        bug_destroy_us
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="117541">
+         1 Day, 8 Hours after release (5 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 08:39:01 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       13
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-362.html">
+        4n86rakam1
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="121613">
+         1 Day, 9 Hours after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 09:46:53 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       14
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-704.html">
+        JordanSec
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="134426">
+         1 Day, 13 Hours after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 13:20:26 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       15
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-931.html">
+        Ireland Without the RE
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="139150">
+         1 Day, 14 Hours after release (2 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 14:39:10 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       16
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-421.html">
+        XA21
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="154437">
+         1 Day, 18 Hours after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 18:53:57 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       17
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-114.html">
+        RPISEC
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="156384">
+         1 Day, 19 Hours after release (3 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 19:26:24 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       18
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-768.html">
+        Tower of Hanoi
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="159784">
+         1 Day, 20 Hours after release (4 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 20:23:04 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       19
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-291.html">
+        PwnProphecy
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="161030">
+         1 Day, 20 Hours after release (4 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 20:43:50 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       20
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-206.html">
+        PwnSec
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="161245">
+         1 Day, 20 Hours after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 20:47:25 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       21
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-879.html">
+        Project Sekai
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="166441">
+         1 Day, 22 Hours after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 22:14:01 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       22
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-918.html">
+        5fac4fe25cd7a2392e12a22e448963
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="166475">
+         1 Day, 22 Hours after release (2 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 22:14:35 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       23
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-770.html">
+        Ganesh
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="166564">
+         1 Day, 22 Hours after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 22:16:04 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       24
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-1115.html">
+        krauq
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="169122">
+         1 Day, 22 Hours after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 22:58:42 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       25
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-776.html">
+        Phish Paprikaš
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="169160">
+         1 Day, 22 Hours after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 22:59:20 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       26
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-867.html">
+        cr3
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="169678">
+         1 Day, 23 Hours after release (6 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 23:07:58 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       27
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-815.html">
+        ARESx
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="171398">
+         1 Day, 23 Hours after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 23:36:38 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 10%;">
+       28
+      </td>
+      <td style="flex-basis: 55%; display: inline; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+       <a href="user-id-1267.html">
+        CodeVinci
+       </a>
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="171771">
+         1 Day, 23 Hours after release (1 tries)
+        </span>
+        <div class="tooltip-text">
+         07/01/2024 - 23:42:51 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div id="footer">
+   <b>
+    Forked from
+    <a href="https://github.com/Milkdrop/CTFx">
+     CTFx
+    </a>
+   </b>
+   v1.3.0.
+   <br/>
+   CTFx by
+   <a href="https://gitlab.com/Milkdrop">
+    Milkdrop
+   </a>
+   , based on
+   <a href="https://github.com/Nakiami/mellivora">
+    mellivora
+   </a>
+  </div>
+  <audio id="audio-typewriter" src="/static/audio/typewriter.mp3">
+  </audio>
+  <audio id="audio-nav-mouseover" src="/static/audio/nav_mouseover.mp3">
+  </audio>
+  <audio id="audio-nav-click" src="/static/audio/nav_click.mp3">
+  </audio>
+  <audio id="audio-btn-dynamic-mouseover" src="/static/audio/btn_dynamic_mouseover.mp3">
+  </audio>
+  <audio id="audio-btn-dynamic-click" src="/static/audio/btn_dynamic_click.mp3">
+  </audio>
+  <audio id="audio-btn-solid-mouseover" src="/static/audio/btn_solid_mouseover.mp3">
+  </audio>
+  <audio id="audio-btn-solid-click" src="/static/audio/btn_solid_click.mp3">
+  </audio>
+  <audio id="audio-checkbox-click" src="/static/audio/checkbox_click.mp3">
+  </audio>
+  <script src="/static/ctfx.js-v-1.3.0.js" type="text/javascript">
+  </script>
+ </body>
+</html>

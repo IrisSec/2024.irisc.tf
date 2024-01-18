@@ -173,25 +173,32 @@
      </small>
     </div>
     <div class="card-content">
-     <div style="display:flex; align-items:center">
-      <div class="decorator-square-container" style="transform: rotate(270deg)">
-       <div class="decorator-square-component" style="background-color:#EF3E36">
+     <p>
+      I was listening to some banger jams on 920 MHz the other day when the broadcast was suddenly interrupted! The channel was just replaced with some erratic bursts of static before it went back to the music. I managed to capture the audio as well as the RF at 2 Msps at the time of the event. What happened?
+     </p>
+     <p>
+     </p>
+     <pre><code>$ shasum *
+96c65f2f404fa6bc27a38a3b822ef2aefb404b92  radio_hijack.mp3
+2125e3a21e74dbbc9139e8666e98b2d26676e5f9  rf_capture.zip</code></pre>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <a href="https://cdn.2024.irisc.tf/radio-hijacking.tar.gz" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         radio-hijacking.tar.gz
+        </img>
        </div>
-       <div class="decorator-square-component title-decorator-gray">
-       </div>
-       <div class="decorator-square-component decorator-square-icon" style="background-image: url('/static/img/icons/hand.png');background-size: 24px;filter:invert(1);transform: rotate(-270deg);">
-       </div>
-      </div>
-      <b>
-       To see this challenge, you must first solve
-       <a href="challenge-id-1.html">
-        Disclaimer
-       </a>
-       from
-       <a href="challenges-category-7.html">
-        Radio Frequency
-       </a>
-      </b>
+      </a>
+     </div>
+     <div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px">
+       <b style="margin-right:8px">
+        By:
+       </b>
+       skat
+      </img>
      </div>
     </div>
    </div>
@@ -230,12 +237,11 @@
      <div>
      </div>
      <div class="tag tag-inline" style="margin-bottom:0px">
-      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px">
-       <b style="margin-right:8px">
-        By:
-       </b>
-       skat
-      </img>
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
+      </b>
+      skat
      </div>
     </div>
    </div>
@@ -254,25 +260,72 @@
      </small>
     </div>
     <div class="card-content">
-     <div style="display:flex; align-items:center">
-      <div class="decorator-square-container" style="transform: rotate(270deg)">
-       <div class="decorator-square-component" style="background-color:#EF3E36">
+     <p>
+      On relaxing afternoons, I sometimes like to sit around and just watch the waves -- radio waves, that is!
+     </p>
+     <p>
+     </p>
+     <p>
+      On one particular afternoon as I was listening at a center frequency of 433 MHz, sampling at 2 Msps with a bandwidth of 2 MHz, I picked up some RF from my neighbor. Every time a signal was transmitted, I saw that some stuff happened around their house, so I think that this is some kind of a home remote control system.
+     </p>
+     <p>
+     </p>
+     <p>
+      I captured the signals and tried replaying them, but it didn't work! There must be some kind of a mechanism to prevent replay attacks. If you can complete the analysis of the captured signals, then we should be able to transmit our own commands to make their house go berserk!
+     </p>
+     <p>
+     </p>
+     <pre><code>Signal 1(a) and 1(b):
+&lt;message: "GARAGE OPEN"&gt; .. &lt;message: "GARAGE CLOSE"&gt;
+
+Signal 2(a) and 2(b):
+&lt;message: "ROOM 1 LIGHTS ENABLE"&gt; .. &lt;message: "ROOM 1 LIGHTS DISABLE"&gt;
+
+Signal 3(a) and 3(b):
+&lt;message: "ROOM 2 LIGHTS ENABLE"&gt; .. &lt;message: "ROOM 2 LIGHTS DISABLE"&gt;
+
+Signal 4(a) and 4(b):
+&lt;message: "FRONT SPRINKLERS ENABLE"&gt; .. &lt;message: "FRONT SPRINKLERS DISABLE"&gt;
+
+Signal 5(a) and 5(b):
+&lt;message: unknown&gt; .. &lt;message: unknown&gt;
+
+Signal 6(a) and 6(b):
+&lt;message: unknown&gt; .. &lt;message: unknown&gt;
+
+Signal 7(a):
+&lt;message: unknown&gt;</code></pre>
+     <p>
+     </p>
+     <p>
+      These signals were transmitted in sequential order, so 1(a) was transmitted first, 1(b) second, 2(a) third, etc.
+     </p>
+     <p>
+     </p>
+     <p>
+      Kids these days are so used to using Wireshark to analyze wireless traffic, but what if the wireless traffic you're trying to analyze isn't Wi-Fi-based?
+     </p>
+     <p>
+     </p>
+     <pre><code>$ shasum l1pcap.zip
+b984b27669a7751126f18418a6fa0b2f9a79da73  l1pcap.zip</code></pre>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <a href="https://cdn.2024.irisc.tf/l1pcap.tar.gz" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         l1pcap.tar.gz
+        </img>
        </div>
-       <div class="decorator-square-component title-decorator-gray">
-       </div>
-       <div class="decorator-square-component decorator-square-icon" style="background-image: url('/static/img/icons/hand.png');background-size: 24px;filter:invert(1);transform: rotate(-270deg);">
-       </div>
-      </div>
-      <b>
-       To see this challenge, you must first solve
-       <a href="challenge-id-1.html">
-        Disclaimer
-       </a>
-       from
-       <a href="challenges-category-7.html">
-        Radio Frequency
-       </a>
+      </a>
+     </div>
+     <div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
       </b>
+      skat
      </div>
     </div>
    </div>
@@ -291,25 +344,26 @@
      </small>
     </div>
     <div class="card-content">
-     <div style="display:flex; align-items:center">
-      <div class="decorator-square-container" style="transform: rotate(270deg)">
-       <div class="decorator-square-component" style="background-color:#EF3E36">
+     <p>
+      I had a conversation with a little birdie over the radio the other day. She told me her name is Laura and she's from a far away place. Then, she sent me the flag.
+     </p>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <a href="https://cdn.2024.irisc.tf/birdie.tar.gz" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         birdie.zip
+        </img>
        </div>
-       <div class="decorator-square-component title-decorator-gray">
-       </div>
-       <div class="decorator-square-component decorator-square-icon" style="background-image: url('/static/img/icons/hand.png');background-size: 24px;filter:invert(1);transform: rotate(-270deg);">
-       </div>
-      </div>
-      <b>
-       To see this challenge, you must first solve
-       <a href="challenge-id-1.html">
-        Disclaimer
-       </a>
-       from
-       <a href="challenges-category-7.html">
-        Radio Frequency
-       </a>
+      </a>
+     </div>
+     <div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
       </b>
+      skat
      </div>
     </div>
    </div>
